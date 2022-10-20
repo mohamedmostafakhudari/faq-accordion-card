@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="text-[12px] font-kumbhSans">
+  <main class="grid place-items-center min-h-screen bg-gradient-to-b from-primary-softViolat to-primary-softBlue px-6">
+    <div class="container flex flex-col rounded-xl bg-white max-w-sm relative mx-auto p-0 px-6 md:max-w-2xl md:flex-row md:items-center md:gap-12 md:py-0 md:pl-0 md:pr-20">
+      <img src="./images/illustration-box-desktop.svg" alt="" class="hidden md:block absolute top-1/2 translate-y-1/4 z-10 w-28 right-full translate-x-1/2">
+      <!--background image-->
+      <div class="relative md:flex-1 md:self-end md:overflow-hidden">
+        <picture>
+          <source media="(min-width:768px)" srcset="./images/illustration-woman-online-desktop.svg">
+          <img src="./images/illustration-woman-online-mobile.svg" alt="" class="absolute bottom-full translate-y-[40%] max-w-xs left-1/2 -translate-x-1/2 w-full md:bottom-1/2 md:-ml-12">
+      </picture>
+        
+      <picture>
+        <source media="(min-width:768px)" srcset="./images/bg-pattern-desktop.svg">
+        <img src="./images/bg-pattern-mobile.svg" alt="" class="w-full max-w-xs mx-auto md:-ml-12">
+      </picture>
+      </div>
+      <!--content -->
+      <div class="md:flex-1 md:pt-4">
+        <!-- title -->
+        <h1 class="text-2xl text-primary-veryDarkDesaturatedBlue font-bold text-center mt-8 md:text-left">FAQ</h1>
+        <ul class="py-16 pt-4 md:pb-16">
+            <li class="pt-3 border-b border-neutral-lightGrayishBlue">
+            <p class="flex items-center justify-between text-neutral-veryDarkGrayishBlue  ease-in-out duration-300">
+              How many team members can I invite?
+              <img src="./images/icon-arrow-down.svg" alt="" class="dropBtn p-3 cursor-pointer">
+            </p>
+            <p class="answer text-neutral-darkGrayishBlue max-h-0 overflow-hidden ease-in-out duration-300 mt-3">You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.</p>
+          </li>
+          <li class="pt-3 border-b border-neutral-lightGrayishBlue">
+            <p class="flex items-center justify-between text-neutral-veryDarkGrayishBlue ease-in-out duration-300">
+              What is the maximum file upload size?
+              <img src="./images/icon-arrow-down.svg" alt="" class="dropBtn cursor-pointer p-3">
+            </p>
+            <p class="answer text-neutral-darkGrayishBlue max-h-0 overflow-hidden ease-in-out duration-300 mt-3">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </li>
+          <li class="pt-3 border-b border-neutral-lightGrayishBlue">
+            <p class="flex items-center justify-between text-neutral-veryDarkGrayishBlue ease-in-out duration-300">
+              How do I reset my password?
+              <img src="./images/icon-arrow-down.svg" alt="" class="dropBtn cursor-pointer p-3">
+            </p>
+            <p class="answer text-neutral-darkGrayishBlue max-h-0 overflow-hidden ease-in-out duration-300 mt-3">Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </li>
+          <li class="pt-3 border-b border-neutral-lightGrayishBlue">
+            <p class="flex items-center justify-between text-neutral-veryDarkGrayishBlue ease-in-out duration-300">
+              Can I cancel my subscription?
+              <img src="./images/icon-arrow-down.svg" alt="" class="dropBtn cursor-pointer p-3">
+            </p>
+            <p class="answer text-neutral-darkGrayishBlue max-h-0 overflow-hidden ease-in-out duration-300 mt-3">Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </li>
+          <li class="pt-3 border-b border-neutral-lightGrayishBlue">
+            <p class="flex items-center justify-between text-neutral-veryDarkGrayishBlue ease-in-out duration-300">
+              Do you provide additional support?
+              <img src="./images/icon-arrow-down.svg" alt="" class="dropBtn cursor-pointer p-3">
+            </p>
+            <p class="answer text-neutral-darkGrayishBlue max-h-0 overflow-hidden ease-in-out duration-300 mt-3">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohamed Mostafa</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
